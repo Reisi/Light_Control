@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Light Control</string>
+    <string name="main_devicelist">available devices</string>
+    <string name="main_search">search</string>
+    <string name="main_searching">searching</string>
+    <string name="fw_unsupported">Device not supported</string>
+    <string name="not_connected">Device not connected</string>
+    <string name="title_activity_device">DeviceActivity</string>
+    <string name="tab_text_1">Status</string>
+    <string name="tab_text_2">Config</string>
+    <string name="tab_text_3">Setup</string>
+    <string name="tab_text_4">Debug</string>
+    <string name="measurement_default">--</string>
+    <string-array name="response_value">
+        <item>successful</item>
+        <item>not supported</item>
+        <item>invalid param</item>
+        <item>failed</item>
+        <item>unknown response</item>
+    </string-array>
+    <string-array name="op_code">
+        <item>mode count request</item>
+        <item>mode change</item>
+        <item>group configuration request</item>
+        <item>group configuration update</item>
+        <item>mode configuration request</item>
+        <item>mode configuration update</item>
+        <item>LED setup request</item>
+        <item>LED setup check</item>
+        <item>sensor offset request</item>
+        <item>sensor offset calibration</item>
+        <item>current limit request</item>
+        <item>current limit update</item>
+        <item>preferred mode request</item>
+        <item>preferred mode update</item>
+        <item>temporary mode request</item>
+        <item>temporary mode update</item>
+        <item>unknown opcode</item>
+    </string-array>
+    <string name="dev_status_rev">n.a.</string>
+    <string name="dev_status_fw_rev">Firmware Rev.:</string>
+    <string name="dev_status_hw_rev">Hardware Rev.:</string>
+    <string name="dev_status_modelist_heading">available modes</string>
+    <string name="dev_status_setup_heading">current mode</string>
+    <string name="dev_status_power">Power</string>
+    <string name="dev_status_temperature">Temperature</string>
+    <string name="dev_status_voltage">Input Voltage</string>
+    <string name="dev_status_pitch">Pitch Angle</string>
+    <string name="dev_status_soc">Battery SOC</string>
+    <string name="dev_status_tail_power">Taillight power</string>
+    <string name="dev_status_pitch_unit_metric">°</string>
+    <string name="dev_status_power_unit_metric">W</string>
+    <string name="dev_status_temperatue_unit_metric">°C</string>
+    <string name="dev_status_voltage_unit_metric">V</string>
+    <string name="dev_unit_percent">%</string>
+    <string name="dev_unit_lux">lux</string>
+    <string name="dev_config_read">read</string>
+    <string name="dev_config_write">write</string>
+    <string name="dev_config_mode">mode</string>
+    <string name="dev_config_group">groups</string>
+    <string name="dev_config_pref">preferred mode</string>
+    <string name="dev_config_temp">temporary mode</string>
+    <string name="dev_setup_offset">sensor offset</string>
+    <string name="dev_setup_offset_read">read</string>
+    <string name="dev_setup_offset_calib">calibrate</string>
+    <string name="dev_setup_offset_cancel">Cancel</string>
+    <string name="dev_setup_offset_default">n.a.</string>
+    <string name="dev_setup_offset_default_x">x-axis offset: </string>
+    <string name="dev_setup_offset_default_y">y-axis offset: </string>
+    <string name="dev_setup_offset_default_z">z-axis offset: </string>
+    <string name="dev_setup_offset_message">To proceed with the sensor calibration process you have to ensure that your light is not in standby mode (simply turn on and off to wake up). Then orient your lamp so that it is exactly pointing down and push the calibrate button</string>
+    <string name="dev_setup_limit">current limits</string>
+    <string name="dev_setup_limit_read">read</string>
+    <string name="dev_setup_limit_update">update</string>
+    <string name="dev_setup_limit_flood">flood</string>
+    <string name="dev_setup_limit_spot">spot</string>
+    <string name="dev_setup_limit_mainbeam">main beam</string>
+    <string name="dev_setup_limit_highbeam">high beam</string>
+    <string name="dev_setup_ledcnt">led count</string>
+    <string name="dev_setup_ledcnt_read">read</string>
+    <string name="dev_setup_ledcnt_check">check</string>
+    <string name="dev_setup_ledcnt_flood">flood driver led count: </string>
+    <string name="dev_setup_ledcnt_spot">spot driver led count: </string>
+    <string name="dev_setup_ledcnt_mainbeam">main beam driver led count: </string>
+    <string name="dev_setup_ledcnt_highbeam">high beam driver led count: </string>
+    <string name="dev_setup_ledcnt_default">unknown</string>
+    <string name="dev_debug_enter_cmd">enter command</string>
+</resources>

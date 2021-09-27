@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorUnselected">
+
+        <TextView
+            android:id="@+id/modesetup_heading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/dev_config_mode"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/modeSetup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toTopOf="@id/intensityBar1"
+            app:layout_constraintEnd_toStartOf="@+id/modeSetup2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@id/guidelineleft"
+            app:layout_constraintTop_toBottomOf="@id/modesetup_heading"
+            app:srcCompat="@mipmap/icon_blank" />
+
+        <ImageView
+            android:id="@+id/modeSetup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/modeSetup3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/modeSetup1"
+            app:layout_constraintTop_toTopOf="@+id/modeSetup1"
+            app:srcCompat="@mipmap/icon_blank" />
+
+        <ImageView
+            android:id="@+id/modeSetup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/modeSetup4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/modeSetup2"
+            app:layout_constraintTop_toTopOf="@+id/modeSetup1"
+            app:srcCompat="@mipmap/icon_blank" />
+
+        <ImageView
+            android:id="@+id/modeSetup4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/modeSetup5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/modeSetup3"
+            app:layout_constraintTop_toTopOf="@+id/modeSetup1"
+            app:srcCompat="@mipmap/icon_blank" />
+
+        <ImageView
+            android:id="@+id/modeSetup5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/modeSetup6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/modeSetup4"
+            app:layout_constraintTop_toTopOf="@+id/modeSetup1"
+            app:srcCompat="@mipmap/icon_blank" />
+
+        <ImageView
+            android:id="@+id/modeSetup6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/intensity"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/modeSetup5"
+            app:layout_constraintTop_toTopOf="@+id/modeSetup1"
+            app:srcCompat="@mipmap/icon_blank"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/intensity"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/measurement_default"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/modeSetup1"
+            app:layout_constraintEnd_toStartOf="@+id/unit"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/modeSetup6"
+            app:layout_constraintTop_toTopOf="@+id/modeSetup1" />
+
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineright"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/intensity"
+            app:layout_constraintTop_toTopOf="@+id/modeSetup1" />
+
+        <SeekBar
+            android:id="@+id/intensityBar1"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:max="20"
+            android:progress="6"
+            app:layout_constraintBottom_toTopOf="@id/intensityBar2"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineright"
+            app:layout_constraintStart_toStartOf="@+id/guidelineleft" />
+
+        <SeekBar
+            android:id="@+id/intensityBar2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:max="20"
+            android:progress="6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineright"
+            app:layout_constraintStart_toStartOf="@+id/guidelineleft" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="8dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="8dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
